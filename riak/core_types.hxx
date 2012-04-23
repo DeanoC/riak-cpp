@@ -6,7 +6,7 @@
  */
 #pragma once
 #include <string>
-#include <riak/riakclient.pb.h>
+#include <riak/riakclient.proto.pb.h>
 
 //=============================================================================
 namespace riak {

@@ -1,5 +1,5 @@
 #pragma once
-#include <riak/riakclient.pb.h>
+#include <riak/riakclient.proto.pb.h>
 
 //=============================================================================
 namespace riak {

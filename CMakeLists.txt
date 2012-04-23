@@ -11,9 +11,11 @@ list( APPEND cpp_header_files ${proto_header_files} )
 
 add_library( riak-cpp ${cpp_src_files} ${cpp_header_files} )
 
+if( !UNIX )
 set_property(
    TARGET riak-cpp 
    PROPERTY COMPILE_DEFINITIONS not=! and=&& or=||
    )
+endif()
 # make a nice hierachy
 set_target_properties( riak-cpp PROPERTIES FOLDER "Libs" )

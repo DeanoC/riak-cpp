@@ -4,7 +4,7 @@
 #include <system_error>
 #include <functional>
 #include <memory>
-#include <riak/riakclient.pb.h>
+#include <riak/riakclient.proto.pb.h>
 #include <string>
 
 //=============================================================================
