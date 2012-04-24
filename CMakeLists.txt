@@ -11,7 +11,7 @@ list( APPEND cpp_header_files ${proto_header_files} )
 
 add_library( riak-cpp ${cpp_src_files} ${cpp_header_files} )
 
-if( !UNIX )
+if( WIN32 )
 set_property(
    TARGET riak-cpp 
    PROPERTY COMPILE_DEFINITIONS not=! and=&& or=||
