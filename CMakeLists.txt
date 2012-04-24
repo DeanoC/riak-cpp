@@ -2,7 +2,7 @@ cmake_minimum_required( VERSION 2.8 )
 
 
 file( GLOB cpp_src_files riak/*.cxx riak/transports/*.cxx )
-file( GLOB cpp_header_files riak/*.hxx riak/transports/*.hxx )
+file( GLOB cpp_header_files riak/*.hxx riak/transports/*.hxx riak/*.proto )
 
 file( GLOB proto_files RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} riak/*.proto )
 PROTOBUF_GENERATE_CPP( proto_src_files proto_header_files ${proto_files} )
